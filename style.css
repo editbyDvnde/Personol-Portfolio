@@ -1,0 +1,336 @@
+/* General reset and dark theme */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cascadia+Mono:wght@200..700&family=Inconsolata:wght@200..900&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 1000px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #0a0a0a; */
+  color: white;
+}
+
+.page {
+  height: 100vh;
+}
+
+.page1 {
+  background: linear-gradient(to right, #5800FF, #0096FF);
+}
+
+.page2 {
+  background: linear-gradient(to right, #0096FF, #00D7FF);
+}
+
+.page3 {
+  background: linear-gradient(to right, #5800FF, #0096FF);
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5vw;
+  background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+   /* position: sticky; */
+  box-shadow: -1px 7px 11px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 11px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 11px -2px rgba(0, 0, 0, 0.75); 
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  /* tambahkan ini */
+  right: 0;
+  /* dan ini */
+  width: 100vw;
+  /* pastikan full lebar viewport */
+
+  /* border-bottom: 1px solid #222; */
+}
+
+.garis {
+  color: #5800FF;
+  font-weight: bold;
+  font-size: 15px;
+  /* background-color: #5800FF; */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Special Gothic Expanded One';
+  list-style-type: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 8px 16px;
+  border: 1px solid #72FFFF;
+  border-radius: 20px;
+  background-color: #72FFFF;
+}
+
+/* Semua link */
+.nav-links li a {
+  color: #5800FF;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s, opacity 0.3s;
+  font-family: 'Cascadia Mono';
+}
+
+/* Underline animasi */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5800FF;
+  transition: width 0.3s ease;
+}
+
+/* Saat hover: garis bawah muncul, warna putih pekat */
+.nav-links li a:hover {
+  color: #5800FF;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Saat salah satu link di-hover, semua link jadi pudar... */
+.nav-links:hover li a {
+  opacity: 0.3;
+}
+
+/* ...kecuali yang sedang di-hover, dia tetap jelas */
+.nav-links li a:hover {
+  opacity: 1;
+}
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ri-search-line {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.connect-wallet {
+  /* background-color: #c3ff3f; */
+  color: #ffffff;
+  border: 2px solid #00D7FF;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-wallet:hover {
+  background-color: #00D7FF;
+  /* color: #5800FF; */
+}
+
+
+#hero {
+  /* background-color: #0a0a0a; */
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 81px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-family: 'Inconsolata';
+}
+
+.hero-text .highlight {
+  color: #72FFFF;
+  font-size: 20px;
+  font-family: 'Cascadia Mono';
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #00D7FF;
+  margin-bottom: 50px;
+  font-family: 'Inconsolata';
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 424px;
+  border-radius: 20px;
+  /* background-color: #c3ff3f; */
+  padding: 0;
+
+}
+
+.hero-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+.stat-box {
+  text-align: right;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 50px;
+  color: #00D7FF;
+  margin: 0;
+  /* font-family: 'Special Gothic Expanded One'; */
+  font-family: 'Cascadia Mono';
+}
+
+.stat-box p {
+  margin: 0;
+  color: #72FFFF;
+  font-family: 'Inconsolata';
+}
+
+/* About Me */
+
+.aboutme-container {
+  position: relative;
+  padding: 2rem;
+}
+
+.arrow-top-left {
+  position: absolute;
+  width: 6%;
+  /* top: 10px;
+  left: 10px;
+  width: 40px; */
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.logo-sekolah {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.gambar-sekolah {
+  width: 100px;
+}
+
+.about-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2rem;
+
+  font-family: 'Special Gothic Expanded One';
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.img-sekolah-kiri {
+  /* width: 200px; */
+  width: 30%;
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.about-text {
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+  font-family: 'Cascadia Mono';
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 16px;
+
+  /* Inner background */
+  background: #1e1e2f; /* warna gelap elegan */
+  color: #fff;
+  z-index: 1;
+
+  /* Gradient border trick */
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#1e1e2f, #1e1e2f), /* inner background */
+    linear-gradient(90deg, #5800FF, #0096FF, #00D7FF, #72FFFF); /* border gradient */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* Shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text:hover {
+  box-shadow: 0 0 20px #00d7ff, 0 0 40px #5800FF;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Project */
+
+.skill-card{
+  width: 30%;
+}
