@@ -4,33 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio | Vantxmx</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/jpg" href="./img/iconswebsite.png">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <section class="page page1" id="awal">
+  <div id="overlay" class="menu-overlay"></div>
+  <section class="page page1" id="awal" style="position: relative; overflow: hidden;">
     <header>
       <nav class="navbar">
         <div class="logo">
           <h1><a href="#awal" style="color: white; text-decoration: none;">PORT<span
                 style="color: #7AE2CF; font-size: 15px;">FOLIO</span></a></h1>
         </div>
-        <ul class="nav-links">
+
+
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
           <li><a href="#Aboutme">About Me</a></li>
           <li class="garis">|</li>
-          <!-- <li><a href="#">School</a></li>
-          <li class="garis">|</li> -->
-          <li><a href="#Skillset">Skilset</a></li>
+          <li><a href="#skills">Skilset</a></li>
           <li class="garis">|</li>
-          <li><a href="#Project">Project</a></li>
+          <li><a href="#Education">Education</a></li>
         </ul>
         <div class="nav-actions">
-          <!-- <a href="#" style="color: white; text-decoration: none; font-size: 25px;"><i class="ri-contacts-fill"></i></a> -->
-          <button class="connect-wallet">Contact Me</button>
+          <button class="connect-wallet"><a href="#Contact" style="color: white; text-decoration: none;">Contact
+              Me</a></button>
         </div>
       </nav>
     </header>
@@ -50,158 +56,331 @@
 
           <!-- Tengah: Gambar utama -->
           <div class="hero-image">
-            <img src="./img/dd.png" alt="Devandra" title="DevandraElSyadam" />
+            <img src="./img/king-devandra.png" alt="Devandra" title="DevandraElSyadam" />
           </div>
 
           <!-- Kanan: Stats -->
           <div class="hero-stats">
-            <div class="stat-box">
-              <h2>XI</h2>
-              <p>Class</p>
+            <div class="stat-item">
+              <div class="stat-box">
+                <h2>XI</h2>
+                <p>Class</p>
+              </div>
+              <div class="divider-line"></div>
             </div>
-            <span style="margin-left: 115px; font-weight: bold; color: #7AE2CF;">_____________</span>
-            <div class="stat-box">
-              <h2>DKV</h2>
-              <p>Major</p>
+
+            <div class="stat-item">
+              <div class="stat-box">
+                <h2>DKV</h2>
+                <p>Major</p>
+              </div>
+              <div class="divider-line"></div>
             </div>
-            <span style="margin-left: 115px; font-weight: bold; color: #7AE2CF;">_____________</span>
-            <div class="stat-box">
-              <h2>SMK</h2>
-              <p>Sasmita Jaya 1</p>
+
+            <div class="stat-item">
+              <div class="stat-box">
+                <h2>SMK</h2>
+                <p>Sasmita Jaya 1</p>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
   </section>
 
-  <!-- Aoutme -->
+  <!-- Aboutme -->
 
   <section id="Aboutme" class="page page2">
     <div class="aboutme-container">
 
-      <!-- Panah kiri atas -->
-      <img src="./img/web4.png" alt="Arah panah" class="arrow-top-left">
+      <img src="img/light.png" alt="Cahaya" class="light-effect-img" />
 
-      <!-- Logo sekolah kanan atas -->
-      <div class="logo-container">
-        <!-- <img src="../image/web1.png" alt="Logo Sekolah" class="logo-sekolah"> -->
-        <!-- <img src="../image/web5.png" alt="Gambar Sekolah" class="gambar-sekolah"> -->
+      <div class="background-moving"></div>
+
+
+
+      <div class="icon-overlay">
+        <img src="img/C++.png" alt="Icon 1" class="blur-icon" style="top: 10%; left: 15%;">
+        <img src="img/AdobeIlustrator.png" alt="Icon 2" class="blur-icon" style="top: 35%; left: 60%;">
+        <img src="img/Git.png" alt="Icon 3" class="blur-icon" style="top: 50%; left: 30%;">
+        <img src="img/Photosh.png" alt="Icon 4" class="blur-icon" style="top: 90%; left: 50%;">
+        <img src="img/Premier.png" alt="Icon 5" class="blur-icon" style="top: 80%; left: 70%;">
       </div>
 
-      <!-- Heading utama -->
+
+
+
+      <div class="logo-container">
+        <img src="./img/sasmita-icon.png" alt="Logo Sekolah" class="logo-sekolah" />
+      </div>
+
       <h2 class="about-heading">Aboutme</h2>
 
-      <!-- Konten utama -->
       <div class="about-content">
-        <!-- Gambar sekolah di kiri -->
-        <img src="./img/s.png" alt="Sekolah" class="img-sekolah-kiri">
+        <img src="./img/Vantxmx.png" alt="Devandra" class="img-sekolah-kiri" title="Devandra El Syadam" />
 
-        <!-- Teks deskripsi -->
         <div class="about-text">
           <p>
-            Halo! Saya <strong>Devandra El Syadam</strong>, pelajar SMK Sasmita Jaya 1 Pamulang jurusan Desain
-            Komunikasi Visual (DKV).
-            Selain mendalami dunia desain, saya juga aktif belajar di bidang <strong>pengembangan web</strong>
-            menggunakan HTML, CSS, JavaScript, dan <strong>PHP dengan koneksi database</strong> (MySQL).
-            Saya juga sedang mempelajari <strong>pemrograman C++</strong> untuk membangun logika dasar pemrograman.
+            Halo! Saya <strong>Devandra El Syadam</strong>, pelajar SMK Sasmita Jaya 1
+            Pamulang jurusan Desain Komunikasi Visual (DKV). Selain mendalami dunia
+            desain, saya juga aktif belajar di bidang <strong>pengembangan web</strong>
+            menggunakan HTML, CSS, JavaScript, dan <strong>PHP dengan koneksi database</strong>
+            (MySQL). Saya juga sedang mempelajari <strong>pemrograman C++</strong> untuk
+            membangun logika dasar pemrograman.
           </p>
           <p>
-            InsyaAllah, saya juga berencana mendalami <strong>ilmu robotik</strong> agar dapat menggabungkan
-            keterampilan desain, logika pemrograman, dan teknologi otomatisasi.
-            Saya percaya bahwa perpaduan kreativitas dan teknologi dapat membawa ide sederhana menjadi solusi nyata.
+            InsyaAllah, saya juga berencana mendalami <strong>ilmu robotik</strong> agar
+            dapat menggabungkan keterampilan desain, logika pemrograman, dan teknologi
+            otomatisasi. Saya percaya bahwa perpaduan kreativitas dan teknologi dapat
+            membawa ide sederhana menjadi solusi nyata.
           </p>
         </div>
       </div>
+  </section>
 
+  <!-- SkillSet -->
+
+  <section id="skills" class="page3 skills-section">
+    <div class="container">
+      <h2 class="section-title">SKILLSET</h2>
+      <div class="skills-grid">
+        <!-- Skill Card 1 -->
+        <div class="skills-grid">
+          <!-- Design Grafis -->
+          <div class="skill-card" tabindex="0" data-skill="design-graphics">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="skill-name">Design Grafis</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card" tabindex="0" data-skill="frontend">
+            <div class="skill-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="skill-name">Frontend</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <!-- C++ -->
+          <div class="skill-card" tabindex="0" data-skill="cpp">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="skill-name">C++</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 40%"></div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card" tabindex="0" data-skill="python">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 48%"></div>
+            </div>
+          </div>
+
+          <!-- Networking -->
+          <div class="skill-card" tabindex="0" data-skill="networking">
+            <div class="skill-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="skill-name">Networking</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Penetration Testing -->
+          <div class="skill-card" tabindex="0" data-skill="pentesting">
+            <div class="skill-icon">
+              <i class="fas fa-user-secret"></i>
+            </div>
+            <h3 class="skill-name">Penetration Testing</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Editing Video -->
+          <div class="skill-card" tabindex="0" data-skill="video-editing">
+            <div class="skill-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3 class="skill-name">Editing Video</h3>
+            <div class="skill-level">
+              <div class="skill-level-bar" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Modal -->
+    <div class="skill-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <div class="modal-icon" id="modal-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h2 id="modal-title">Visual Design</h2>
+        </div>
+        <div class="modal-body">
+          <p id="modal-description">Description about this skill will appear here.</p>
+          <div class="modal-level">
+            <div class="modal-level-bar" id="modal-level-bar"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Project -->
+
+  <!-- Education -->
+
+  <section id="Education" class="education-section">
+    <div class="education-container">
+      <h1 class="education-title">Education Journey</h1>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="school-card">
+          <div class="school-photo"
+            style="background-image:url('https://smk1.sasmitajaya.sch.id/wp-content/uploads/2023/04/IMG_0136-1024x575.jpg');">
+            <div class="school-year">2022 - Present</div>
+          </div>
+          <div class="school-info">
+            <div class="school-header">
+              <h2 class="school-name">SMK Sasmita Jaya 1 Pamulang</h2>
+              <span class="school-major">Visual Communication Design</span>
+            </div>
+
+            <div class="school-badges">
+              <span class="badge">Vocational</span>
+              <span class="badge">Graphic Design</span>
+              <span class="badge">Web Design</span>
+            </div>
+
+            <div class="school-actions">
+              <button class="btn btn-primary toggle-details">
+                <span>View Details</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <button class="btn btn-secondary open-map" data-map-url="https://maps.app.goo.gl/hutJXxC1NnFBuKLB8">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Location</span>
+              </button>
+            </div>
+
+            <div class="school-details">
+              <p>Sekolah Menengah Kejuruan (SMK) dengan kompetensi keahlian Desain Komunikasi Visual yang berfokus pada
+                pengembangan keterampilan desain grafis, multimedia, dan web design.</p>
+              <ul class="school-features">
+                <li><i class="fas fa-check-circle"></i> Fasilitas studio desain lengkap</li>
+                <li><i class="fas fa-check-circle"></i> Laboratorium komputer terkini</li>
+                <li><i class="fas fa-check-circle"></i> Program magang industri</li>
+                <li><i class="fas fa-check-circle"></i> Pengajar profesional di bidangnya</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="Contact" class="page page5" aria-label="Contact Me">
+    <div class="contact-container">
+      <h1>Feedback</h1>
+      <form id="contact-form">
+        <div class="form-row">
+          <label for="user_name">Nama</label>
+          <input type="text" id="user_name" name="user_name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="user_email">Email</label>
+          <input type="email" id="user_email" name="user_email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+        </div>
+
+        <button type="submit">Kirim</button>
+        <p id="form-status"></p>
+      </form>
 
 
+      <!-- Medsos -->
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p>Email: <a href="mailto:devandraelsyadam28@gmail.com" target="_blank">devandraelsyadam28@gmail.com</a></p>
+        <p>Phone: <a href="https://wa.me/6285117348774" target="_blank">+62 851 173 487 74</a></p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Project Section -- -->
-
-  <!-- <section id="projects" class="projects">
-                            <h2 style="color: #c3ff3f;">My Projects</h2>
-                            <div class="project-grid">
-                                <div class="project-card">
-                                    <img src="./image/project1.png" alt="Project 1" />
-                                    <h3>LazyCode Generator</h3>
-                                    <p>Web generator dan validasi kode otomatis.</p>
-                                    <button>BID NOW</button>
-                                </div>
-                                <div class="project-card">
-                                    <img src="./image/project2.png" alt="Project 2" />
-                                    <h3>Portofolio Dark Theme</h3>
-                                    <p>Website personal modern dengan animasi smooth.</p>
-                                    <button>BID NOW</button>
-                                </div>
-                                <div class="project-card">
-                                    <img src="./image/project3.png" alt="Project 3" />
-                                    <h3>Art Showcase</h3>
-                                    <p>Galeri desain grafis interaktif dan stylish.</p>
-                                    <button>BID NOW</button>
-                                </div>
-                            </div>
-                        </section> -->
+        <h2>Follow Me</h2>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://instagram.com/vantxmx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://github.com/editByDvnde" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="ri-github-line"></i>
+          </a>
+          <a href="https://tiktok.com/@psdpixel26" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="ri-tiktok-line"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dyeger-el-a3b885334/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://gitlab.com/devandraelsyadam28" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+            <i class="ri-gitlab-line"></i>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <p><a href="copyright.html" class="footer-a">&copy; 2025 Devandra El Syadam. All rights reserved.</p></a>
+      </footer>
+    </div>
+  </section>
   </main>
 
-  <!-- <script src="../backend/script.js"></script> -->
-  <!-- <script>
-    // Reveal animation
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init('1_blCvmzrt_D1XPEK');
 
-          // Auto-scroll scroll-wrapper saat terlihat
-          if (entry.target.classList.contains('scroll-wrapper')) {
-            entry.target.scrollLeft = entry.target.scrollWidth;
-          }
-        }
-      });
-    }, { threshold: 0.4 });
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      emailjs.sendForm('service_fqwfp06', 'template_t0jiuch', this)
+      // .then(() => {
+      //   alert('Message sent!');
+      // }, (err) => {
+      //   alert('Failed to send message: ' + JSON.stringify(err));
+      // });
+    });
+  </script>
 
-    revealEls.forEach(el => observer.observe(el));
-  </script> -->
-
+  <script src="skill-popup.js" defer></script>
+  <script src="contact.js" defer></script>
+  <script src="skill.js" defer></script>
+  <script src="animated-icons.js" defer></script>
+  <script src="shake-nav.js" defer></script>
+  <script src="education.js" defer></script>
+  <script src="toggle-menu.js" defer></script>
 </body>
 
 </html>
